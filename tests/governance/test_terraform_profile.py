@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).parents[2]
-TEMPLATE_REPOSITORY = "Yukihide-Mitsuoka/terraform-gcp-template"
+TEMPLATE_REPOSITORY = "ea-Mitsuoka/terraform-gcp-template"
 
 
 class TerraformGovernanceProfileTest(unittest.TestCase):

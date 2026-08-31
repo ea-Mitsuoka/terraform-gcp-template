@@ -10,7 +10,7 @@ read_when: [agent-entry]
 This protected project layer contains repository identity and stack facts only. The
 explicit agent profile loads it after the inherited foundation contract.
 
-- Repository: `Yukihide-Mitsuoka/terraform-gcp-template`.
+- Repository: `ea-Mitsuoka/terraform-gcp-template`.
 - Role: reusable Terraform template for Google Cloud projects.
 - Stack: Terraform on Google Cloud, with root configurations under `infra/envs/`.
 - Modules: external modules come from `Yukihide-Mitsuoka/terraform-gcp-modules` at

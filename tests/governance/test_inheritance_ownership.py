@@ -13,11 +13,11 @@ PROFILE = ROOT / ".github/inheritance/agent-profile.json"
 PROJECT_OVERLAY = ROOT / ".ai/project/agent-overlay.md"
 TEMPLATE_OVERLAY = (
     ROOT
-    / ".ai/contracts/templates/yukihide-mitsuoka/terraform-gcp-template/agent-overlay.md"
+    / ".ai/contracts/templates/ea-mitsuoka/terraform-gcp-template/agent-overlay.md"
 )
 TEMPLATE_EXPORT = (
     ROOT
-    / ".ai/contracts/templates/yukihide-mitsuoka/terraform-gcp-template/inheritance-export.json"
+    / ".ai/contracts/templates/ea-mitsuoka/terraform-gcp-template/inheritance-export.json"
 )
 CLAUDE_ADAPTER = ROOT / "CLAUDE.md"
 AGENT_ADAPTER = ROOT / "AGENTS.md"
@@ -26,8 +26,8 @@ SPEC = importlib.util.spec_from_file_location("template_inheritance", MODULE_PAT
 inheritance = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(inheritance)
 
-FOUNDATION_REPOSITORY = "Yukihide-Mitsuoka/ai-dev-foundation"
-TEMPLATE_REPOSITORY = "Yukihide-Mitsuoka/terraform-gcp-template"
+FOUNDATION_REPOSITORY = "ea-Mitsuoka/ai-dev-foundation"
+TEMPLATE_REPOSITORY = "ea-Mitsuoka/terraform-gcp-template"
 FOUNDATION_INPUT = {
     "layer": "foundation",
     "repository": FOUNDATION_REPOSITORY,
@@ -36,7 +36,7 @@ FOUNDATION_INPUT = {
 TEMPLATE_INPUT = {
     "layer": "template",
     "repository": TEMPLATE_REPOSITORY,
-    "path": ".ai/contracts/templates/yukihide-mitsuoka/terraform-gcp-template/agent-overlay.md",
+    "path": ".ai/contracts/templates/ea-mitsuoka/terraform-gcp-template/agent-overlay.md",
 }
 EXPECTED_EXPORT_INPUTS = [
     FOUNDATION_INPUT,
@@ -158,7 +158,7 @@ class InheritanceOwnershipTest(unittest.TestCase):
         for identity in (
             "{{PROJECT_NAME}}",
             "{{STACK}}",
-            "Yukihide-Mitsuoka/terraform-gcp-template",
+            "ea-Mitsuoka/terraform-gcp-template",
             "Terraform on GCP",
         ):
             with self.subTest(identity=identity):
@@ -182,7 +182,7 @@ class InheritanceOwnershipTest(unittest.TestCase):
 
     def test_owner_qualified_template_overlay_exports_only_family_rules(self):
         template_root = (
-            ".ai/contracts/templates/yukihide-mitsuoka/terraform-gcp-template/"
+            ".ai/contracts/templates/ea-mitsuoka/terraform-gcp-template/"
         )
         overlay = TEMPLATE_OVERLAY.read_text(encoding="utf-8")
 
@@ -199,23 +199,23 @@ class InheritanceOwnershipTest(unittest.TestCase):
         self.assertIn("Terraform on Google Cloud", overlay)
         self.assertIn("iac-scan", overlay)
         self.assertIn("immutable release tags", overlay)
-        self.assertNotIn("Repository: `Yukihide-Mitsuoka/terraform-gcp-template`", overlay)
+        self.assertNotIn("Repository: `ea-Mitsuoka/terraform-gcp-template`", overlay)
         self.assertNotIn(".ai/project/", overlay)
 
     def test_owner_qualified_bootstrap_export_defines_direct_child_contract(self):
         export_path = (
-            ".ai/contracts/templates/yukihide-mitsuoka/terraform-gcp-template/"
+            ".ai/contracts/templates/ea-mitsuoka/terraform-gcp-template/"
             "inheritance-export.json"
         )
         export = inheritance._validate_bootstrap_export(
             export_path,
             json.loads(TEMPLATE_EXPORT.read_text(encoding="utf-8")),
-            "Yukihide-Mitsuoka/terraform-gcp-template",
+            "ea-Mitsuoka/terraform-gcp-template",
         )
 
         self.assertEqual(export["agent_inputs"], EXPECTED_EXPORT_INPUTS)
         for inherited in (
-            ".ai/contracts/templates/yukihide-mitsuoka/terraform-gcp-template/",
+            ".ai/contracts/templates/ea-mitsuoka/terraform-gcp-template/",
             ".github/governance/profiles/",
             "profiles/terraform-gcp/",
         ):

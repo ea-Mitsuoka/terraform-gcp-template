@@ -25,13 +25,13 @@ class ProjectPullRequestSizePolicyTests(unittest.TestCase):
     def test_authenticated_template_sync_may_exceed_only_numeric_limit(self) -> None:
         authenticated = is_authenticated_template_sync(
             pr_author="github-actions[bot]",
-            head_repository="Yukihide-Mitsuoka/terraform-gcp-template",
-            target_repository="Yukihide-Mitsuoka/terraform-gcp-template",
+            head_repository="ea-Mitsuoka/terraform-gcp-template",
+            target_repository="ea-Mitsuoka/terraform-gcp-template",
             head_ref="chore/template_sync_c3b5dbf",
             base_ref="main",
             pr_body=(
                 "Direct-parent-source: "
-                "https://github.com/Yukihide-Mitsuoka/ai-dev-foundation@"
+                "https://github.com/ea-Mitsuoka/ai-dev-foundation@"
                 + "a" * 40
             ),
         )
@@ -44,13 +44,13 @@ class ProjectPullRequestSizePolicyTests(unittest.TestCase):
     def test_template_sync_authentication_fails_closed(self) -> None:
         valid = {
             "pr_author": "github-actions[bot]",
-            "head_repository": "Yukihide-Mitsuoka/terraform-gcp-template",
-            "target_repository": "Yukihide-Mitsuoka/terraform-gcp-template",
+            "head_repository": "ea-Mitsuoka/terraform-gcp-template",
+            "target_repository": "ea-Mitsuoka/terraform-gcp-template",
             "head_ref": "chore/template_sync_c3b5dbf",
             "base_ref": "main",
             "pr_body": (
                 "Direct-parent-source: "
-                "https://github.com/Yukihide-Mitsuoka/ai-dev-foundation@"
+                "https://github.com/ea-Mitsuoka/ai-dev-foundation@"
                 + "a" * 40
             ),
         }
@@ -70,7 +70,7 @@ class ProjectPullRequestSizePolicyTests(unittest.TestCase):
             {
                 "pr_body": (
                     "Direct-parent-source: "
-                    "https://github.com/Yukihide-Mitsuoka/ai-dev-foundation@"
+                    "https://github.com/ea-Mitsuoka/ai-dev-foundation@"
                     + "a" * 39
                 )
             },

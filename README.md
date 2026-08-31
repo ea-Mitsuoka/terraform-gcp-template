@@ -1,10 +1,10 @@
 # terraform-gcp-template
 
-<!-- repository-readme-owner: Yukihide-Mitsuoka/terraform-gcp-template -->
+<!-- repository-readme-owner: ea-Mitsuoka/terraform-gcp-template -->
 
 **GCP Terraform starter on the ai-dev-foundation base** — a template repository for
 infrastructure projects where AI agents are the primary developers. It layers a Terraform
-setup on top of everything [ai-dev-foundation](https://github.com/Yukihide-Mitsuoka/ai-dev-foundation)
+setup on top of everything [ai-dev-foundation](https://github.com/ea-Mitsuoka/ai-dev-foundation)
 provides (rules, guardrails, skills, hooks, CI).
 
 > **AI agents:** stop reading this file. Your entry point is [CLAUDE.md](CLAUDE.md)
@@ -22,7 +22,7 @@ ai-dev-foundation ──sync──▶ terraform-gcp-template ──sync──▶
 | Decision | Rule |
 |----------|------|
 | Need Terraform/GCP? | "Use this template" **here** |
-| No Terraform? | Use [ai-dev-foundation](https://github.com/Yukihide-Mitsuoka/ai-dev-foundation) directly |
+| No Terraform? | Use [ai-dev-foundation](https://github.com/ea-Mitsuoka/ai-dev-foundation) directly |
 | Reusable building blocks | Live in [terraform-gcp-modules](https://github.com/Yukihide-Mitsuoka/terraform-gcp-modules), **referenced by tag, never copied** |
 | Base updates | ai-dev-foundation changes arrive here as sync PRs ([template-sync.yml](.github/workflows/template-sync.yml), manual trigger any time); downstream repos repoint their sync source to THIS repo |
 
@@ -36,13 +36,13 @@ ai-dev-foundation ──sync──▶ terraform-gcp-template ──sync──▶
 
 Everything else (`.ai/` rules, `.skills/`, `.claude/` hooks and skills, `.github/`
 workflows, docs skeleton) comes from the base — see its
-[README](https://github.com/Yukihide-Mitsuoka/ai-dev-foundation#readme).
+[README](https://github.com/ea-Mitsuoka/ai-dev-foundation#readme).
 
 ## Using this template
 
 1. **Create the repo**: GitHub → "Use this template".
 2. **Repoint template sync**: in `.github/workflows/template-sync.yml`, change
-   `source_repo_path` to `Yukihide-Mitsuoka/terraform-gcp-template`; set the repo variable
+   `source_repo_path` to `ea-Mitsuoka/terraform-gcp-template`; set the repo variable
    `TEMPLATE_SYNC_ENABLED=true` to receive updates.
 3. **Replace placeholders**: `grep -rn "{{" . --exclude-dir=.git` — mission, project name,
    state bucket in `infra/envs/*/versions.tf`.

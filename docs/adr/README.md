@@ -24,5 +24,6 @@ decisions from `ai-dev-foundation` are synchronized under
 | # | Title | Status | Date |
 |---|-------|--------|------|
 | [0003](0003-adopt-direct-parent-template-inheritance.md) | Adopt manifest-driven direct-parent template inheritance | accepted | 2026-07-16 |
+| [0004](0004-repoint-the-direct-parent-and-repository-identity-to-the-current-account.md) | Repoint the direct parent and repository identity to the current account | proposed | 2026-09-01 |
 
 <!-- Append new Terraform-template ADRs to this table (newest last). -->
