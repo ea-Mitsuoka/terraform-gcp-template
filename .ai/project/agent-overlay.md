@@ -13,7 +13,7 @@ explicit agent profile loads it after the inherited foundation contract.
 - Repository: `ea-Mitsuoka/terraform-gcp-template`.
 - Role: reusable Terraform template for Google Cloud projects.
 - Stack: Terraform on Google Cloud, with root configurations under `infra/envs/`.
-- Modules: external modules come from `Yukihide-Mitsuoka/terraform-gcp-modules` at
+- Modules: external modules come from `ea-Mitsuoka/terraform-gcp-modules` at
   immutable release tags; their implementations remain in the module repository.
 - Execution model: repository files describe desired configurations. Applying
   Terraform, changing GitHub governance, and creating Google Cloud resources are
