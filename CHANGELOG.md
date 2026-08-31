@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/ea-Mitsuoka/terraform-gcp-template/compare/v1.4.4...v2.0.0) (2026-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* **inheritance:** secure-ga4-bq-template must adopt the renamed contract root and ea-Mitsuoka/terraform-gcp-template as its direct parent in its own reviewed PR.
+
+### Miscellaneous Chores
+
+* **inheritance:** repoint direct parent and identity to ea-Mitsuoka ([84e269d](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/84e269d85b8457b65bd7364aa2bb29ec2f1c8843)), closes [#1](https://github.com/ea-Mitsuoka/terraform-gcp-template/issues/1)
+
 ## [1.4.4](https://github.com/Yukihide-Mitsuoka/terraform-gcp-template/compare/v1.4.3...v1.4.4) (2026-08-29)
 
 
