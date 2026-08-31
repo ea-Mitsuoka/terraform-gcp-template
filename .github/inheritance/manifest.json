@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "parent": {
-    "repository": "Yukihide-Mitsuoka/ai-dev-foundation",
+    "repository": "ea-Mitsuoka/ai-dev-foundation",
     "branch": "main"
   },
   "lock_file": ".github/inheritance/lock.json",
@@ -44,7 +44,7 @@
     ".ai/coding-rules.md",
     ".ai/decision-log.md",
     ".ai/mission.md",
-    ".ai/contracts/templates/yukihide-mitsuoka/terraform-gcp-template/",
+    ".ai/contracts/templates/ea-mitsuoka/terraform-gcp-template/",
     ".ai/project/",
     ".ai/review-checklist.md",
     ".ai/workflow.md",

@@ -29,8 +29,8 @@ LOCKFILE_NAMES = frozenset(
         "yarn.lock",
     }
 )
-TARGET_REPOSITORY = "Yukihide-Mitsuoka/terraform-gcp-template"
-DIRECT_PARENT_REPOSITORY = "Yukihide-Mitsuoka/ai-dev-foundation"
+TARGET_REPOSITORY = "ea-Mitsuoka/terraform-gcp-template"
+DIRECT_PARENT_REPOSITORY = "ea-Mitsuoka/ai-dev-foundation"
 TEMPLATE_SYNC_BRANCH = re.compile(r"chore/template_sync_[0-9a-f]{7,40}\Z")
 DIRECT_PARENT_SOURCE = re.compile(
     rf"^Direct-parent-source: https://github\.com/{DIRECT_PARENT_REPOSITORY}@[0-9a-f]{{40}}$",

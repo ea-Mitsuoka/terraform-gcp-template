@@ -13,8 +13,8 @@ MODULE_PATH = ROOT / "scripts/template_inheritance.py"
 SPEC = importlib.util.spec_from_file_location("template_inheritance", MODULE_PATH)
 inheritance = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(inheritance)
-PARENT_REPOSITORY = "Yukihide-Mitsuoka/terraform-gcp-template"
-CHILD_REPOSITORY = "Yukihide-Mitsuoka/bootstrap-proof"
+PARENT_REPOSITORY = "ea-Mitsuoka/terraform-gcp-template"
+CHILD_REPOSITORY = "ea-Mitsuoka/bootstrap-proof"
 SOURCE_COMMIT = "a" * 40
 
 
@@ -31,7 +31,7 @@ class ChildBootstrapPortabilityTest(unittest.TestCase):
         )
         export_path = (
             self.child
-            / ".ai/contracts/templates/yukihide-mitsuoka/terraform-gcp-template/inheritance-export.json"
+            / ".ai/contracts/templates/ea-mitsuoka/terraform-gcp-template/inheritance-export.json"
         )
         export = inheritance._validate_bootstrap_export(
             export_path.relative_to(self.child).as_posix(),

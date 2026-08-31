@@ -16,7 +16,7 @@ changes. Architectural decisions remain in ADRs and the append-only decision log
 
 | Item | Verified state |
 |------|----------------|
-| Child repository | `Yukihide-Mitsuoka/terraform-gcp-template` |
+| Child repository | `ea-Mitsuoka/terraform-gcp-template` |
 | Child baseline | `main` at PR #57 merge commit `de7df1b760534644eb97b9bdd10ab72adb5f665c` |
 | Last completed change | [PR #57](https://github.com/Yukihide-Mitsuoka/terraform-gcp-template/pull/57), adopted ruleset-only governance discovery |
 | Accepted parent lock | `ada82ed598a68d36d6419985a64e31e876996bd8` |
@@ -134,7 +134,7 @@ python3 scripts/template_inheritance.py validate --root .
 python3 scripts/template_inheritance.py plan --root . --parent-root ../ai-dev-foundation
 python3 scripts/github_governance.py validate --root .
 python3 scripts/github_governance.py plan --root . \
-  --repo Yukihide-Mitsuoka/terraform-gcp-template
+  --repo ea-Mitsuoka/terraform-gcp-template
 ```
 
 The inheritance planner was verified on 2026-07-23 at merge commit `de7df1b` against
