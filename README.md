@@ -23,7 +23,7 @@ ai-dev-foundation ──sync──▶ terraform-gcp-template ──sync──▶
 |----------|------|
 | Need Terraform/GCP? | "Use this template" **here** |
 | No Terraform? | Use [ai-dev-foundation](https://github.com/ea-Mitsuoka/ai-dev-foundation) directly |
-| Reusable building blocks | Live in [terraform-gcp-modules](https://github.com/Yukihide-Mitsuoka/terraform-gcp-modules), **referenced by tag, never copied** |
+| Reusable building blocks | Live in [terraform-gcp-modules](https://github.com/ea-Mitsuoka/terraform-gcp-modules), **referenced by tag, never copied** |
 | Base updates | ai-dev-foundation changes arrive here as sync PRs ([template-sync.yml](.github/workflows/template-sync.yml), manual trigger any time); downstream repos repoint their sync source to THIS repo |
 
 ## What this adds on top of ai-dev-foundation
