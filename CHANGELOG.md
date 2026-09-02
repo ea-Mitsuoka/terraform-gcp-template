@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.2](https://github.com/ea-Mitsuoka/terraform-gcp-template/compare/v2.0.1...v2.0.2) (2026-09-02)
+
+
+### Bug Fixes
+
+* **ci:** judge PR size against the current pull-request body ([3c171f6](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/3c171f6f43a81e9bad4f46397e20ca43d6250bef))
+* **ci:** judge PR size against the current pull-request body ([73f88a3](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/73f88a3d41d483c2940c70e983da97d010a11fda))
+
 ## [2.0.1](https://github.com/ea-Mitsuoka/terraform-gcp-template/compare/v2.0.0...v2.0.1) (2026-09-02)
 
 
