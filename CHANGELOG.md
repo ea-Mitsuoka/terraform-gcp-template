@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.1](https://github.com/ea-Mitsuoka/terraform-gcp-template/compare/v2.0.0...v2.0.1) (2026-09-02)
+
+
+### Bug Fixes
+
+* **ci:** keep contents permission on the protected private-repo jobs ([aa1662c](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/aa1662c31da17377abe40ec745b4faf500a43f23))
+* **ci:** keep contents permission on the protected private-repo jobs ([6f976f8](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/6f976f8b1d42ba5dacce8da0dae9ff804355ac07)), closes [#11](https://github.com/ea-Mitsuoka/terraform-gcp-template/issues/11)
+
 ## [2.0.0](https://github.com/ea-Mitsuoka/terraform-gcp-template/compare/v1.4.4...v2.0.0) (2026-08-31)
 
 
