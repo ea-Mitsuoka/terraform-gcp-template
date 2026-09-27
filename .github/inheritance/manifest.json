@@ -74,6 +74,7 @@
     "CLAUDE.md",
     "Makefile",
     "README.md",
+    "Taskfile.yml",
     "infra/",
     "profiles/",
     "src/",
