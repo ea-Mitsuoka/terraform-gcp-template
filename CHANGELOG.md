@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.0](https://github.com/ea-Mitsuoka/terraform-gcp-template/compare/v2.0.2...v2.1.0) (2026-10-01)
+
+
+### Features
+
+* run the canonical targets with go-task (ADR-0026) ([a7b7dc4](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/a7b7dc482b49a903e0725e496ff3e66eead63ca9))
+* run the canonical targets with go-task (ADR-0026) ([c320597](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/c3205976db46ffe85222ea2d25cc96df874f1702))
+
 ## [2.0.2](https://github.com/ea-Mitsuoka/terraform-gcp-template/compare/v2.0.1...v2.0.2) (2026-09-02)
 
 
