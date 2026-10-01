@@ -31,7 +31,7 @@ ai-dev-foundation ──sync──▶ terraform-gcp-template ──sync──▶
 | Addition | Location |
 |----------|----------|
 | Terraform root-config layout (per-env) | [`infra/envs/`](infra/) with a worked `dev` example referencing the module library pinned at `?ref=v0.5.0` |
-| Canonical Makefile wired for this layout | [`Makefile`](Makefile) — fmt/lint/validate/test over `infra/`; `plan ENV=<env>`; heavier layered-foundations reference remains in [`profiles/terraform-gcp/`](profiles/terraform-gcp/) |
+| Canonical Taskfile wired for this layout | [`Taskfile.yml`](Taskfile.yml) — fmt/lint/validate/test over `infra/`; `plan ENV=<env>`; heavier layered-foundations reference remains in [`profiles/terraform-gcp/`](profiles/terraform-gcp/) |
 | Terraform gitignore/state hygiene | `.gitignore` |
 
 Everything else (`.ai/` rules, `.skills/`, `.claude/` hooks and skills, `.github/`
@@ -53,6 +53,6 @@ workflows, docs skeleton) comes from the base — see its
    `apply` with an exact `--confirm-repo OWNER/REPOSITORY`; it changes settings.
    `scripts/setup-github.sh` is a compatibility wrapper for the same policy-driven
    `plan` and explicitly confirmed `apply` paths.
-5. **Install local gates**: `make setup`.
-6. **Verify**: `make doctor && make build` (build = credential-free validate of every env).
+5. **Install local gates**: `task setup`.
+6. **Verify**: `task doctor && task build` (build = credential-free validate of every env).
 7. Point your agent at the repo and assign it an issue.

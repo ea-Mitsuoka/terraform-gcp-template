@@ -18,7 +18,7 @@ Rules:
   a module worth writing is worth contributing to the library.
 - Truly project-specific glue (a one-off resource, a local wrapper) may live beside the
   env's `main.tf`; if it grows reusable, promote it to the library (rule of three, COD-020).
-- `make build` validates every env without credentials; `make plan ENV=dev` needs
+- `task build` validates every env without credentials; `task plan ENV=dev` needs
   credentials and a configured backend (`versions.tf`).
 
 Update triggers: new env → new `envs/<env>/`; new module reference → bump/pin note in the
