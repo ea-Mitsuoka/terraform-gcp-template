@@ -10,7 +10,7 @@ Purpose: a **worked example** of a bounded context following this foundation's r
 Clean Architecture layers, DDD tactical patterns, and the testing conventions. It manages
 a product catalog: creating products and listing them for sale. It does **not** own
 pricing strategy, inventory, or orders. This module is reference code to imitate
-(COD-050); it is not wired into the no-op template Makefile. Delete it (and
+(COD-050); it is not wired into the no-op template Taskfile. Delete it (and
 `tests/modules/catalog/`) when starting a real project.
 
 ## Public API (the contract — everything else is private)
@@ -56,4 +56,4 @@ interface/http_handler.py                  # framework-free inbound example
 ```
 
 Tests mirror this at `tests/modules/catalog/unit/test_catalog.py`. Run them with the
-python-uv profile (`make test`) or, ad hoc, `PYTHONPATH=. pytest tests/modules/catalog`.
+python-uv profile (`task test`) or, ad hoc, `PYTHONPATH=. pytest tests/modules/catalog`.
