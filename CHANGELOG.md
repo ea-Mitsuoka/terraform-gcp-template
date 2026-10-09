@@ -1,5 +1,20 @@
 # Changelog
 
+## [3.0.0](https://github.com/ea-Mitsuoka/terraform-gcp-template/compare/v2.0.2...v3.0.0) (2026-10-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* make <target> no longer works at the repository root; run task <target>.
+
+### Features
+
+* **profiles:** replace the profile Makefiles with Taskfiles (ADR-0026) ([b4ef194](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/b4ef194fcfe84693a73b33089b1d4eeb824869c3))
+* **profiles:** replace the profile Makefiles with Taskfiles (ADR-0026) ([210930d](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/210930d5ce93900538c63a3ff4f6b9f5aea8033d))
+* remove the root Makefile (ADR-0026) ([9f21e46](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/9f21e4614b49caf5d5dbf17c9767a944318714c8))
+* run the canonical targets with go-task (ADR-0026) ([a7b7dc4](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/a7b7dc482b49a903e0725e496ff3e66eead63ca9))
+* run the canonical targets with go-task (ADR-0026) ([c320597](https://github.com/ea-Mitsuoka/terraform-gcp-template/commit/c3205976db46ffe85222ea2d25cc96df874f1702))
+
 ## [2.0.2](https://github.com/ea-Mitsuoka/terraform-gcp-template/compare/v2.0.1...v2.0.2) (2026-09-02)
 
 
